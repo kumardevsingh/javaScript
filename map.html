@@ -1,0 +1,56 @@
+<script>
+	/* var arr = [3, 5, 6, 7, 1,0];
+
+
+
+	function findMissingNumber(ary) {
+		var sortedArr = ary.sort((a, b) => a - b);
+		let mNumber = -1;
+		for (var i = 0; i < sortedArr.length; i++) {
+			if (sortedArr.indexOf(i) === -1) {
+				mNumber = i;
+				break;
+			}
+		}
+		return mNumber;
+	}
+
+
+	console.log(findMissingNumber(arr)); */
+	/* var str = "I love javaScript";
+
+	var newStr = str.split('').reverse().join('');
+	console.log(newStr); */
+
+	/* find a number length */
+
+	var a = 123456;
+
+	var lengthOfNum =  Math.ceil(Math.log(a+1) / Math.LN10);
+	console.log(lengthOfNum);
+	
+	/*
+	isPrime or Not
+	
+	*/
+	
+	let isPrime  = (n)=> {
+  
+   if(!Number.isInteger(n) || n <2 || !(n%2)){
+     return false;
+     
+   }
+  for(let i=3; i<n-1; i++){
+    
+    if(n%i===0){
+      return false;
+    }
+    return true;
+    
+  } 
+  return true;
+}
+
+console.log(isPrime(4))
+
+</script>
